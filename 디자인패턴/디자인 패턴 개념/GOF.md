@@ -3,55 +3,55 @@
    - 부모 클래스는 객체를 생성할 인터페이스를 제공, 자식 클래스는 객체의 유형에 따라 해당 객체의 생성을 구현하게 된다.
    
      **(예시)** 
-     
+      
      몬스터를 상속받는 고블린, 슬라임이 있을때, 팩토리가 있고, 몬스터 유형에 따른 팩토리에서 생성 로직이 구현되어 있다.
-         <details>
-         <summary>구현 예시</summary>
-         
-         ```
-         public interface IMonster
-         {
-            int Health { get; set; }
-            int AttackPower { get; set; }
-            int DefensePower { get; set; }
-
-            void Move();
-            // 그 외 코드들
-         }
-
-         class Slime: IMonster
-         {
-            // 여러 코드 구현
-         }
-
-         class Goblin: IMonster
-         {
-            // 여러 코드 구현
-         }
-
-         public abstract class MonsterFactory
-         {
-            public abstract IMonster CreateMonster(); //팩토리 메서드
-         }
-
-         public class SlimeFactory : MosterFactory
-         {
-            public override IMonster CreateMoster()
-            {
-               return new Slime();
-            }
-         }
-
-         public class GoblinFactory : MosterFactory
-         {
-            public override IMonster CreateMoster()
-            {
-               return new Goblin();
-            }
-         }
-         ```
-
-         </datails>
+      <details>
+        <summary>구현 예시</summary>
+   
+        ```csharp
+        public interface IMonster
+        {
+           int Health { get; set; }
+           int AttackPower { get; set; }
+           int DefensePower { get; set; }
+   
+           void Move();
+           // 그 외 코드들
+        }
+   
+        class Slime : IMonster
+        {
+           // 여러 코드 구현
+        }
+   
+        class Goblin : IMonster
+        {
+           // 여러 코드 구현
+        }
+   
+        public abstract class MonsterFactory
+        {
+           public abstract IMonster CreateMonster(); // 팩토리 메서드
+        }
+   
+        public class SlimeFactory : MonsterFactory
+        {
+           public override IMonster CreateMonster()
+           {
+              return new Slime();
+           }
+        }
+   
+        public class GoblinFactory : MonsterFactory
+        {
+           public override IMonster CreateMonster()
+           {
+              return new Goblin();
+           }
+        }
+        ```
+        
+        </details>
 2. 추상 팩토리
    - 객체들의 조합을 만들 필요가 있을 때, 객체의 조합에 대한 인터페이스를 제공한다.
      
@@ -61,7 +61,7 @@
          <details>
          <summary>구현 예시</summary>
          
-         ```
+         ```csharp
          public interface IMonster
          {
             int Health { get; set; }
@@ -155,7 +155,7 @@
       <details>
       <summary>구현 예시</summary>
 
-      ```
+      ```csharp
       public interface ICharacterBuilder
       {
          void SetWeapon();
@@ -252,7 +252,7 @@
       <details>
       <summary>구현 예시</summary>
 
-      ```
+      ```csharp
       public class Equipment
       {
          public string Name { get; set; }
