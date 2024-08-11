@@ -58,93 +58,94 @@
      **(예시)** 
       
       각 단계에 대한 생성 메소드가 있는 추상 팩토리가 있어서, 스테이지에 따라 여러 팩토리들을 제작할 수 있다.
-         <details>
-         <summary>구현 예시</summary>
-         
-         ```csharp
-         public interface IMonster
-         {
-            int Health { get; set; }
-            int AttackPower { get; set; }
-            int DefensePower { get; set; }
+      <details>
+     <summary>구현 예시</summary>
 
-            void Move();
-            // 그 외 코드들
-         }
+     ```csharp
+     public interface IMonster
+     {
+        int Health { get; set; }
+        int AttackPower { get; set; }
+        int DefensePower { get; set; }
 
-         class Slime: IMonster
-         {
-            // 여러 코드 구현
-         }
+        void Move();
+        // 그 외 코드들
+     }
 
-         class Goblin: IMonster
-         {
-            // 여러 코드 구현
-         }
+     class Slime : IMonster
+     {
+        // 여러 코드 구현
+     }
 
-         public interface class IMonsterFactory
-         {
-            IMoster CreateFirstStep(); // 1단계 스텝의 몬스터들 생성
-            IMoster CreateSecondStep(); // 2단계 스텝의 몬스터들 생성
-            IMoster CreateFinalStep(); // 마지막 단계의 몬스터들 생성
-         }
+     class Goblin : IMonster
+     {
+        // 여러 코드 구현
+     }
 
-         public class StageAMosterFactory : IMonsterFactory 
-         {
-            public List<IMonster> CreateFirstStep()
-            {
-               List<IMonster> monsters = new List<IMonster>();
-               monsters.Add(new Slime());
-               return monsters;
-            }
+     public interface IMonsterFactory
+     {
+        IMonster CreateFirstStep();   // 1단계 스텝의 몬스터들 생성
+        IMonster CreateSecondStep();  // 2단계 스텝의 몬스터들 생성
+        IMonster CreateFinalStep();   // 마지막 단계의 몬스터들 생성
+     }
 
-            public List<IMonster> CreateSecondStep()
-            {
-               List<IMonster> monsters = new List<IMonster>();
-               monsters.Add(new Slime());
-               monsters.Add(new Slime());
-               return monsters;
-            }
+     public class StageAMonsterFactory : IMonsterFactory
+     {
+        public List<IMonster> CreateFirstStep()
+        {
+           List<IMonster> monsters = new List<IMonster>();
+           monsters.Add(new Slime());
+           return monsters;
+        }
 
-            public List<IMonster> CreateFinalStep()
-            {
-               List<IMonster> monsters = new List<IMonster>();
-               monsters.Add(new Slime());
-               monsters.Add(new Slime());
-               monsters.Add(new Slime());
-               return monsters;
-            }
-         }
+        public List<IMonster> CreateSecondStep()
+        {
+           List<IMonster> monsters = new List<IMonster>();
+           monsters.Add(new Slime());
+           monsters.Add(new Slime());
+           return monsters;
+        }
 
-         public class StageBMosterFactory : IMonsterFactory 
-         {
-            public List<IMonster> CreateFirstStep()
-            {
-               List<IMonster> monsters = new List<IMonster>();
-               monsters.Add(new Goblin());
-               return monsters;
-            }
+        public List<IMonster> CreateFinalStep()
+        {
+           List<IMonster> monsters = new List<IMonster>();
+           monsters.Add(new Slime());
+           monsters.Add(new Slime());
+           monsters.Add(new Slime());
+           return monsters;
+        }
+     }
 
-            public List<IMonster> CreateSecondStep()
-            {
-               List<IMonster> monsters = new List<IMonster>();
-               monsters.Add(new Slime());
-               monsters.Add(new Goblin());
-               return monsters;
-            }
+     public class StageBMonsterFactory : IMonsterFactory
+     {
+        public List<IMonster> CreateFirstStep()
+        {
+           List<IMonster> monsters = new List<IMonster>();
+           monsters.Add(new Goblin());
+           return monsters;
+        }
 
-            public List<IMonster> CreateFinalStep()
-            {
-               List<IMonster> monsters = new List<IMonster>();
-               monsters.Add(new Slime());
-               monsters.Add(new Slime());
-               monsters.Add(new Goblin());
-               monsters.Add(new Goblin());
-               return monsters;
-            }
-         }
-         ```
-         </details>
+        public List<IMonster> CreateSecondStep()
+        {
+           List<IMonster> monsters = new List<IMonster>();
+           monsters.Add(new Slime());
+           monsters.Add(new Goblin());
+           return monsters;
+        }
+
+        public List<IMonster> CreateFinalStep()
+        {
+           List<IMonster> monsters = new List<IMonster>();
+           monsters.Add(new Slime());
+           monsters.Add(new Slime());
+           monsters.Add(new Goblin());
+           monsters.Add(new Goblin());
+           return monsters;
+        }
+     }
+     ```
+
+     </details>
 3. 빌더
    - 복잡한 객체를 구성하는 부분들을 단계별로 생성하고, 이를 조합해서 복잡한 객체를 생성하는 방식
    
