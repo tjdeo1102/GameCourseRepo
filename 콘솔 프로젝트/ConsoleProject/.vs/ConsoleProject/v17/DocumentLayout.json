@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\master\\Desktop\\KDT\\GameCourseRepo\\\uCF58\uC194 \uD504\uB85C\uC81D\uD2B8\\ConsoleProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0E29E709-6BC3-4F40-84D7-6764EE0D5AF5}|ConsoleProject.csproj|c:\\users\\master\\desktop\\kdt\\gamecourserepo\\\uCF58\uC194 \uD504\uB85C\uC81D\uD2B8\\consoleproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E29E709-6BC3-4F40-84D7-6764EE0D5AF5}|ConsoleProject.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E29E709-6BC3-4F40-84D7-6764EE0D5AF5}|ConsoleProject.csproj|c:\\users\\master\\desktop\\kdt\\gamecourserepo\\\uCF58\uC194 \uD504\uB85C\uC81D\uD2B8\\consoleproject\\mangers\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E29E709-6BC3-4F40-84D7-6764EE0D5AF5}|ConsoleProject.csproj|solutionrelative:mangers\\soundmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E29E709-6BC3-4F40-84D7-6764EE0D5AF5}|ConsoleProject.csproj|c:\\users\\master\\desktop\\kdt\\gamecourserepo\\\uCF58\uC194 \uD504\uB85C\uC81D\uD2B8\\consoleproject\\consoleproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{0E29E709-6BC3-4F40-84D7-6764EE0D5AF5}|ConsoleProject.csproj|solutionrelative:consoleproject.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConsoleProject",
+              "DocumentMoniker": "C:\\Users\\master\\Desktop\\KDT\\GameCourseRepo\\\uCF58\uC194 \uD504\uB85C\uC81D\uD2B8\\ConsoleProject\\ConsoleProject.csproj",
+              "RelativeDocumentMoniker": "ConsoleProject.csproj",
+              "ToolTip": "C:\\Users\\master\\Desktop\\KDT\\GameCourseRepo\\\uCF58\uC194 \uD504\uB85C\uC81D\uD2B8\\ConsoleProject\\ConsoleProject.csproj",
+              "RelativeToolTip": "ConsoleProject.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvw4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-13T00:26:38.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SoundManager.cs",
+              "DocumentMoniker": "C:\\Users\\master\\Desktop\\KDT\\GameCourseRepo\\\uCF58\uC194 \uD504\uB85C\uC81D\uD2B8\\ConsoleProject\\Mangers\\SoundManager.cs",
+              "RelativeDocumentMoniker": "Mangers\\SoundManager.cs",
+              "ToolTip": "C:\\Users\\master\\Desktop\\KDT\\GameCourseRepo\\\uCF58\uC194 \uD504\uB85C\uC81D\uD2B8\\ConsoleProject\\Mangers\\SoundManager.cs",
+              "RelativeToolTip": "Mangers\\SoundManager.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAIwDcAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T00:26:34.539Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\master\\Desktop\\KDT\\GameCourseRepo\\\uCF58\uC194 \uD504\uB85C\uC81D\uD2B8\\ConsoleProject\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\master\\Desktop\\KDT\\GameCourseRepo\\\uCF58\uC194 \uD504\uB85C\uC81D\uD2B8\\ConsoleProject\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAADwvxIAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-13T00:25:16.548Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
